@@ -37,8 +37,8 @@ public class Main {
 
             switch (sum) {
                 case 2:
-                    currentPlayer.getAccount().deposit(250);
                     System.out.println("Der er kolde kontanter i tårenet, du tjener 250! ");
+                    currentPlayer.getAccount().deposit(250);
                     break;
                 case 3:
                     currentPlayer.getAccount().withdraw(100);
