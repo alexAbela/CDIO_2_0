@@ -1,4 +1,4 @@
-// Har indtil videre ikke andet end name, den burde da kunne have noget mere?
+// A player class which constructs a player with a name which is user input and a default bankaccount with 1000
 
 public class Player {
 

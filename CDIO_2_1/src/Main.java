@@ -1,9 +1,9 @@
 /***********************************************************************************************************************
-
-
-
-
-
+ // Golden Dice2 v1.1   Date 06/11/2018      Author: Ida Christensen
+ //                                                 Gustav Nobert
+ //  A dice game where 2 players                    Martin Grønlykke
+ //  roll 2 dice untill there is a winner           Anders Eisenhardt
+ //  which is defined by a set of rules             Alexander Abela
  **********************************************************************************************************************/
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         textOutputs txt = new textOutputs();
 
-        while(true) {
+        while(true) {   //The whole system is in a while loop so after a game and after instructions it can go back
             txt.textMain();
             String playerInput = scan.next();
             if (playerInput.equals("1")) {
