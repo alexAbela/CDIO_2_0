@@ -1,20 +1,20 @@
-/***********************************************************************************************************************
-
-
-
-
-
- **********************************************************************************************************************/
+//*********************************************************************************************************************
+// Golden Dice 2 v1.0   Date 06/11/2018      Author: Ida Christensen
+//                                                 Gustav Nobert
+//  A dice game where 2 players                    Martin Grønlykke
+//  roll 2 dice until there is a winner           Anders Eisenhardt
+//  which is defined by a set of rules             Alexander Abela
+//*********************************************************************************************************************
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         textOutputs txt = new textOutputs();
+        txt.textMain();         //Prints the main menu from textOutputs class
 
-        txt.textMain();
         String playerInput = scan.next();
-        while(true) {
+        while(true) {                                    //Puts the game in a while loop so it can be played again
             if (playerInput.equals("1")) {
 
             Dice die1 = new Dice();
@@ -29,7 +29,7 @@ public class Main {
 
             Player currentPlayer = player1;       // Creating a currentPlayer to represent whose turn it is
             int sum = 0;                          //Sum of die values
-            // The game is in a while loop which stops when either player reaches the winning score
+                                 // The game is in a while loop which stops when either player reaches the winning score
             while (player1.getAccount().getBalance() < 3000 && player2.getAccount().getBalance() < 3000) {
 
                 System.out.println("It is " + currentPlayer.getName() + "'s turn");
@@ -101,12 +101,12 @@ public class Main {
                 }
             }
             if (player1.getAccount().getBalance() > 3000) {
-                System.out.println("Congratulations " + player1.getName() + " Wins!!");
-                System.out.println("press 1 to go back to the main menu");
+                System.out.println("Congratulations " + player1.getName() + " Wins!!\n"+
+                                   "press 1 to go back to the main menu");
                 scan.next("1");
             } else {
-                System.out.println("Congratulations " + player2.getName() + " Wins!!");
-                System.out.println("press 1 to go back to the main menu");
+                System.out.println("Congratulations " + player2.getName() + " Wins!!\n"+
+                                   "press 1 to go back to the main menu");
                 scan.next("1");
             }
         } else if (playerInput.equals("2")) {

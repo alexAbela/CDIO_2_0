@@ -1,3 +1,5 @@
+//A class that has all the bigger text outputs so they don't take up too much space on the main
+
 public class textOutputs {
 
 
@@ -15,7 +17,7 @@ public class textOutputs {
     }
 
     public void txt2(){
-
+        System.out.println("Der er kolde kontanter i tårenet, du tjener 250!");
 
     }
 
