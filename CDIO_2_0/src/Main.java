@@ -43,47 +43,47 @@ public class Main {
 
                 switch (sum) {
                     case 2:
-                        currentPlayer.getAccount().deposit(250);
                         txt.txt2();
+                        currentPlayer.getAccount().deposit(250);
                         break;
                     case 3:
-                        currentPlayer.getAccount().withdraw(100);
                         txt.txt3();
+                        currentPlayer.getAccount().withdraw(100);
                         break;
                     case 4:
-                        currentPlayer.getAccount().deposit(100);
                         txt.txt4();
+                        currentPlayer.getAccount().deposit(100);
                         break;
                     case 5:
-                        currentPlayer.getAccount().withdraw(20);
                         txt.txt5();
+                        currentPlayer.getAccount().withdraw(20);
                         break;
                     case 6:
-                        currentPlayer.getAccount().deposit(180);
                         txt.txt6();
+                        currentPlayer.getAccount().deposit(180);
                         break;
                     case 7:
                         txt.txt7();
                         break;
                     case 8:
-                        currentPlayer.getAccount().withdraw(70);
                         txt.txt8();
+                        currentPlayer.getAccount().withdraw(70);
                         break;
                     case 9:
-                        currentPlayer.getAccount().deposit(60);
                         txt.txt9();
+                        currentPlayer.getAccount().deposit(60);
                         break;
                     case 10:
-                        currentPlayer.getAccount().withdraw(80);
                         txt.txt10();
+                        currentPlayer.getAccount().withdraw(80);
                         break;
                     case 11:
-                        currentPlayer.getAccount().withdraw(50);
                         txt.txt11();
+                        currentPlayer.getAccount().withdraw(50);
                         break;
                     case 12:
-                        currentPlayer.getAccount().deposit(650);
                         txt.txt12();
+                        currentPlayer.getAccount().deposit(650);
                         break;
                     default:
                         break;
