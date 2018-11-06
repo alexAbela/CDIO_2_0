@@ -43,48 +43,47 @@ public class Main {
 
                 switch (sum) {
                     case 2:
-                        System.out.println("Der er kolde kontanter i tårenet, du tjener 250! ");
                         currentPlayer.getAccount().deposit(250);
+                        txt.txt2();
                         break;
                     case 3:
                         currentPlayer.getAccount().withdraw(100);
-                        System.out.println("Du er faldet i krateret og det koster hele 100 at komme op ");
+                        txt.txt3();
                         break;
                     case 4:
                         currentPlayer.getAccount().deposit(100);
-                        System.out.println("Du er nået frem til paladsets porte, du får 100kr af guds engle ");
+                        txt.txt4();
                         break;
                     case 5:
                         currentPlayer.getAccount().withdraw(20);
-                        System.out.println(" Du fryser så meget i den kolde ørken at du brænder 20 for at holde varmen");
+                        txt.txt5();
                         break;
                     case 6:
                         currentPlayer.getAccount().deposit(180);
-                        System.out.println(" Du er ankommet til den afkransede by, du får 180 ");
+                        txt.txt6();
                         break;
                     case 7:
-                        System.out.println("Du besøger klostrede, det har ingen effekt på din balance");
+                        txt.txt7();
                         break;
                     case 8:
                         currentPlayer.getAccount().withdraw(70);
-                        System.out.println("Du besøger desværre den sorte grotte og det betyder desværre du lider et tab på 70 ");
+                        txt.txt8();
                         break;
                     case 9:
                         currentPlayer.getAccount().deposit(60);
-                        System.out.println("Du finder nogle hyggelige hytter i bjergene og din balance stiger med 60");
+                        txt.txt9();
                         break;
                     case 10:
                         currentPlayer.getAccount().withdraw(80);
-                        System.out.println("Du løber ind i nogle varerulve og løber for dit liv. Du taber desværre 80 på vejen. ");
-                        System.out.println("Du får en tur til");
+                        txt.txt10();
                         break;
                     case 11:
                         currentPlayer.getAccount().withdraw(50);
-                        System.out.println("Du falder desværre i kløften og skal betale hele 50 for at komme op igen. ");
+                        txt.txt11();
                         break;
                     case 12:
                         currentPlayer.getAccount().deposit(650);
-                        System.out.println("Du har fundet guld i bjergene og sælger det for 650, du er rig!. ");
+                        txt.txt12();
                         break;
                     default:
                         break;

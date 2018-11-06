@@ -15,12 +15,9 @@ public class textOutputs {
     }
 
     public void txt2(){
-
-
     }
 
     public void txt3(){
-
 
     }
 
