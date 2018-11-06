@@ -30,15 +30,17 @@ public class Main {
             Player currentPlayer = player1;       // Creating a currentPlayer to represent whose turn it is
             int sum = 0;                          //Sum of die values
             // The game is in a while loop which stops when either player reaches the winning score
+            scan = new Scanner(System.in);
             while (player1.getAccount().getBalance() < 3000 && player2.getAccount().getBalance() < 3000) {
 
                 System.out.println("             It is " + currentPlayer.getName() + "'s turn           \n" +
                                    "--------------------------------------------");
 
+
+                System.out.println("             Press Enter to roll              \n");
+                scan.nextLine();
                 die1.roll();
                 die2.roll();
-                System.out.println("              Press 1 to roll             \n");
-                //scan.next("1");
                 sum = die1.getValue() + die2.getValue();
                 System.out.println("You have rolled: " + die1.getValue() + " and " + die2.getValue() + " which equals " + sum + " \n");
 
