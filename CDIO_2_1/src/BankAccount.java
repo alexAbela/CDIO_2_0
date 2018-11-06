@@ -35,8 +35,12 @@ public class BankAccount {
                                 "--------------------------------------------\n");
             return this.balance;
 
+        } else {
+            System.out.println("--------------------------------------------\n" +
+                    "*       Your new balance is       " + this.balance + "     *\n" +
+                    "--------------------------------------------\n");
+            return balance;
         }
-        return this.balance;
     }
 
     // standard method for returning balance.
