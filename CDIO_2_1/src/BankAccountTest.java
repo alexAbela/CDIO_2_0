@@ -1,5 +1,5 @@
-import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.*;
+import org.testng.annotations.Test;
+import static org.junit.Assert.assertEquals;
 
 class BankAccountTest{
 
@@ -17,7 +17,7 @@ class BankAccountTest{
         assertEquals(0, acc.withdraw(100));
 
     }
-// Tjekker at balancen bliver retuneret korrekt.
+    // Tjekker at balancen bliver retuneret korrekt.
     @Test
     void getBalance() {
         BankAccount acc = new BankAccount(1);

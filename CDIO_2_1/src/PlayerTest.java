@@ -1,5 +1,5 @@
-import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.*;
+import org.testng.annotations.Test;
+import static org.junit.Assert.assertEquals;
 
 public class PlayerTest {
 
