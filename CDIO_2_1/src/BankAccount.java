@@ -27,11 +27,16 @@ public class BankAccount {
     public int withdraw(int amount) {
 
         this.balance -= amount;
-        System.out.println("--------------------------------------------\n" +
-                           "*       Your new balance is       " + this.balance + "     *\n" +
-                           "--------------------------------------------\n");
-        return this.balance;
+        if (balance < 0) {
 
+            this.balance = 0;
+            System.out.println("--------------------------------------------\n" +
+                                "*       Your new balance is       " + this.balance + "     *\n" +
+                                "--------------------------------------------\n");
+            return this.balance;
+
+        }
+        return this.balance;
     }
 
     // standard get metode der returnerer balancen.
@@ -43,4 +48,3 @@ public class BankAccount {
 
 
 }
-
