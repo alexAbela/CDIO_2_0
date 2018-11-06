@@ -2,7 +2,7 @@ public class BankAccount {
 
     private int balance;
 
-    // Constructor, en simple klasse i denne omgang
+    // Constructor, for a simple class
 
     public BankAccount(int balance) {
 
@@ -11,7 +11,7 @@ public class BankAccount {
     }
 
 
-    // Metode til når der skal penge ind på kontoen.
+    // Method for depositing money
     public int deposit(int amount) {
 
         balance += amount;
@@ -22,7 +22,7 @@ public class BankAccount {
 
     }
 
-    //Metode til når der skal penge du af kontoen.
+    // Method for withdrawel, the withdraw method can't put balance below 0.
 
     public int withdraw(int amount) {
 
@@ -39,12 +39,9 @@ public class BankAccount {
         return this.balance;
     }
 
-    // standard get metode der returnerer balancen.
+    // standard method for returning balance.
     public int getBalance() {
         return this.balance;
 
     }
-    // standard set metode der returnerer balancen.
-
-
 }
