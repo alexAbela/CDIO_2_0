@@ -38,7 +38,7 @@ public class Main {
                 die1.roll();
                 die2.roll();
                 System.out.println("              Press 1 to roll             \n");
-                scan.next("1");
+                //scan.next("1");
                 sum = die1.getValue() + die2.getValue();
                 System.out.println("You have rolled: " + die1.getValue() + " and " + die2.getValue() + " which equals " + sum + " \n");
 
