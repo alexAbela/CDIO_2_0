@@ -39,8 +39,16 @@ public class Main {
 
                 System.out.println("             Press Enter to roll              \n");
                 scan.nextLine();
+
+                long startTime = System.nanoTime();
                 die1.roll();
                 die2.roll();
+                        long endTime = System.nanoTime();
+                        long totalTime = endTime - startTime;
+                        System.out.println(totalTime / 100 + " ms");
+
+
+
                 sum = die1.getValue() + die2.getValue();
                 System.out.println("You have rolled: " + die1.getValue() + " and " + die2.getValue() + " which equals " + sum + " \n");
 
